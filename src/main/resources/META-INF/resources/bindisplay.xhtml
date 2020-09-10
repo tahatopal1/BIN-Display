@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:h="http://java.sun.com/jsf/html"
+  xmlns:p="http://primefaces.org/ui"
+  xmlns:f="http://java.sun.com/jsf/core"
+  xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+  <title>Bin Ekranı</title>
+</h:head>
+
+<h:body>
+  <h:form id="helloworld-form">
+    <p:messages id="messages" showDetail="true" closable="true" autoUpdate="true" severity="info">
+    </p:messages>
+    <p:panel id="panel" style="width:750px; height:300px;">
+    <h:panelGrid columns="3" cellpadding="4">
+    <p:outputLabel value="Uye Secimi" style="margin-right: 88px;"/>
+       <p:selectOneMenu id="bank" value="#{issuerBean.name}" style="width:200px">
+			<f:selectItem itemLabel="Seciniz..." itemValue="Seciniz..."/>
+			<f:selectItems value="#{issuerController.bankList}"/>
+				<f:validator validatorId="com.project.validator.BinValidator"/>
+        </p:selectOneMenu>
+        <p:message for="bank"/>
+        <p:outputLabel value="BIN"/>
+         <p:inputText id = "bin" required="true" requiredMessage="#{errorMessagesBean.HATA_MESAJI_1}" value="#{binController.binBean.bin}" style="width:228px">
+         	<p:keyFilter regEx="/[0-9]/i"/> 
+            <f:validator validatorId = "com.project.validator.BinValidator"/>
+            <p:ajax event="keyup" update="out1" />
+            <p:ajax event="keyup" update="out2" />
+         </p:inputText>
+        <p:message for="bin"/>
+	  </h:panelGrid>
+	  <h:panelGrid columns="4" cellpadding="4">
+        <p:outputLabel value="BIN Aralik Baslangic"/>
+        	<p:inputText id="out1" style="width:75px" value="#{binController.binBean.bin}" disabled="true"/> 
+        	<p:inputText id="start" style="width:133px" value="#{binController.binBean.binStart}" required="true" requiredMessage="#{errorMessagesBean.HATA_MESAJI_1}">
+        		<p:keyFilter regEx="/[0-9]/i"/> 
+        		<f:validator validatorId = "com.project.validator.BinValidator"/>
+        	</p:inputText>
+        	<p:message for="start"/>
+        <p:outputLabel value="BIN Aralik Bitis" style="margin-right: 60px;"/>
+        	<p:inputText id="out2" style="width:75px" value="#{binController.binBean.bin}" disabled="true"/> 
+        	<p:inputText id="end" style="width:133px" value="#{binController.binBean.binEnd}" required="true" requiredMessage="#{errorMessagesBean.HATA_MESAJI_1}">
+        		<p:keyFilter regEx="/[0-9]/i"/> 
+        		<f:validator validatorId = "com.project.validator.BinValidator"/>
+        	</p:inputText>
+        	<p:message for="end">
+        		<p:autoUpdate/>
+        	</p:message>
+	   </h:panelGrid>
+	   <h:panelGrid columns="4" cellpadding="4">
+        	<p align="right" style="width:315px">
+        	<p:commandButton id="button" value="Kaydet" action="#{binController.saveBIN(issuerBean.name)}" actionListener="#{errorMessagesBean.info}" update="panel">
+        	</p:commandButton>
+        		</p>
+        </h:panelGrid>
+    </p:panel>
+  </h:form>
+</h:body>
+</html>
