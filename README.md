@@ -39,7 +39,7 @@ Zorunlu alan boş bırakılamaz. (Required area cannot be empty.)
  
  After successful transaction, new data is saved in database.
 
-![](https://i.hizliresim.com/KXYRjd.png)
+![](https://i.hizliresim.com/KXYRJd.png)
 
 
 
