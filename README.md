@@ -12,7 +12,8 @@ Java Server Faces / Primefaces
 H2 Database / Sql2o
 
 
-Page display:
+
+<h3>Page display:</h3>
 
 ![](https://i.hizliresim.com/hODy6N.png)
 
