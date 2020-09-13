@@ -1,7 +1,7 @@
 # BIN Display
 A Spring Boot project that is consist of a single BIN (Bank Identification Number) registration page.
 
-Technologies:
+<h3>Technologies:</h3>
 
 Java 1.8 / Spring Framework
 
