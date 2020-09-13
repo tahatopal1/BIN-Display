@@ -20,7 +20,7 @@ Database: http://localhost:8080/h2
 
 ![](https://i.hizliresim.com/hODy6N.png)
 
-<h6>Some validations></h6>
+<h6>Some validations</h6>
 
 ![](https://i.hizliresim.com/CUIZmd.png)
 
