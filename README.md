@@ -16,7 +16,7 @@ H2 Database / Sql2o
 Page: http://localhost:8080/bindisplay.xhtml
 Database: http://localhost:8080/h2
 
-<h3>Page display:</h3>
+<h4>Page display:</h4>
 
 ![](https://i.hizliresim.com/hODy6N.png)
 
@@ -30,7 +30,7 @@ Zorunlu alan boş bırakılamaz. (Required area cannot be empty.)
 
 .. karakter giriniz. (Enter .. characters.)
 
-<h6>Successful case</h6>
+<h4>Successful case</h4>
 
 ![](https://i.hizliresim.com/FVpC61.png)
  
