@@ -13,4 +13,4 @@ H2 Database / Sql2o
 
 
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Image](https://hizliresim.com/hODy6N)
