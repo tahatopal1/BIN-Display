@@ -14,13 +14,14 @@ H2 Database / Sql2o
 <h3>End Points</h3>
 
 Page: http://localhost:8080/bindisplay.xhtml
+
 Database: http://localhost:8080/h2
 
 <h4>Page display:</h4>
 
 ![](https://i.hizliresim.com/hODy6N.png)
 
-<h6>Some validations</h6>
+<h4>Some validations</h4>
 
 ![](https://i.hizliresim.com/CUIZmd.png)
 
