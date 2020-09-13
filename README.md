@@ -13,4 +13,4 @@ H2 Database / Sql2o
 
 
 
-[url=https://hizliresim.com/hODy6N][img]https://i.hizliresim.com/hODy6N.png[/img][/url]
+[img]https://i.hizliresim.com/hODy6N.png[/img][/url]
